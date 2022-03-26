@@ -301,9 +301,9 @@
 ![asciinema_nam](img/asciinema_nam.PNG)
 参考链接：
 
-(linux查找指定内容文件)[https://www.cnblogs.com/linjiqin/p/11678012.html]
-(gzip命令_Linux gzip命令)[http://c.biancheng.net/linux/gzip.html]
-(linux下各种文件格式的压缩以及解压缩命令)[https://www.cnblogs.com/cnland/p/3559042.html]
-(linux查看硬盘信息)[https://www.php.cn/linux-474598.html]
-(Linux系统命令 - 查看内存使用情况)[https://blog.csdn.net/renfufei/article/details/105851728]
-(Linux-tshark抓包工具安装和使用)[https://blog.csdn.net/carefree2005/article/details/122131633]
+[linux查找指定内容文件](https://www.cnblogs.com/linjiqin/p/11678012.html)
+[gzip命令_Linux gzip命令](http://c.biancheng.net/linux/gzip.html)
+[linux下各种文件格式的压缩以及解压缩命令](https://www.cnblogs.com/cnland/p/3559042.html)
+[linux查看硬盘信息](https://www.php.cn/linux-474598.html)
+[Linux系统命令 - 查看内存使用情况](https://blog.csdn.net/renfufei/article/details/105851728)
+[Linux-tshark抓包工具安装和使用](https://blog.csdn.net/carefree2005/article/details/122131633)
