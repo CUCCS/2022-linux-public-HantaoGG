@@ -27,13 +27,13 @@
 `sudo apt-get install asciinema`
 `asciinema auth`
 
-![asciinema_download](/img/asciinema_download.PNG)
+![asciinema_download](img/asciinema_download.PNG)
 
-####在云环境安装`asciinema` ：
+#### 在云环境安装`asciinema` ：
 
 `yum install -y  asciinema`
 `asciinema auth`
-![remote_asciinema_install](/img/remote_asciinema_install.PNG)
+![remote_asciinema_install](img/remote_asciinema_install.PNG)
 
 ### 【软件包管理】在目标发行版上安装 tmux 和 tshark ；查看这 2 个软件被安装到哪些路径；卸载 tshark ；验证 tshark 卸载结果 ：
 
@@ -45,8 +45,8 @@
 
 `which tmux`
 
-![local_tmux](/img/local_tmux.PNG)
-链接为`https://asciinema.org/a/58lXA6BUBR9CZ8a3LkLrMW3Gp`
+![local_tmux](img/local_tmux.PNG)
+[![asciinema](https://asciinema.org/a/58lXA6BUBR9CZ8a3LkLrMW3Gp.svg)](https://asciinema.org/a/58lXA6BUBR9CZ8a3LkLrMW3Gp)
 
 ##### `tshark`的安装卸载、路径查看
 
@@ -56,9 +56,9 @@
 
 `sudo apt-get remove --purge tshark`
 
-![local_tshark](/img/local_tshark.PNG)
+![local_tshark](img/local_tshark.PNG)
 
-链接为`https://asciinema.org/a/NVxrjKMyQ7luZHLoVsOMr0E0C`
+[![asciinema](https://asciinema.org/a/NVxrjKMyQ7luZHLoVsOMr0E0C.svg)](https://asciinema.org/a/NVxrjKMyQ7luZHLoVsOMr0E0C)
 
 #### 在云环境操作：
 
@@ -68,9 +68,9 @@
 
 `which tmux`
 
-![remote_tmux](/img/remote_tmux.PNG)
+![remote_tmux](img/remote_tmux.PNG)
 
-链接为`https://asciinema.org/a/bU5xVLXpdpIcvSdXza2zJeuQ2`
+[![asciinema](https://asciinema.org/a/bU5xVLXpdpIcvSdXza2zJeuQ2.svg)](https://asciinema.org/a/bU5xVLXpdpIcvSdXza2zJeuQ2)
 
 ##### `tshark`的安装卸载、路径查看
 
@@ -78,9 +78,9 @@
 `which tshark`
 `yum -y remove wireshark`
 `which tshark`
-![remote_tshark](/img/remote_tshark.PNG)
+![remote_tshark](img/remote_tshark.PNG)
 
-链接为`https://asciinema.org/a/rI1So3c7azhzAgoL91lQeJ5Sv`
+[![asciinema](https://asciinema.org/a/rI1So3c7azhzAgoL91lQeJ5Sv.svg)](https://asciinema.org/a/rI1So3c7azhzAgoL91lQeJ5Sv)
 
 ### 【文件管理】复制以下 shell 代码到终端运行，在目标 Linux 发行版系统中构造测试数据集，然后回答以下问题：1.找到 /tmp 目录及其所有子目录下，文件名包含 666 的所有文件找到 2./tmp 目录及其所有子目录下，文件内容包含 666 的所有文件
 
@@ -91,15 +91,15 @@
 
 `cd /tmp && for i in $(seq 0 1024);do dir="test-$RANDOM";mkdir "$dir";echo "$RANDOM" > "$dir/$dir-$RANDOM";done`
 
- ![add_shellcode](/img/add_shellcode.PNG)
+ ![add_shellcode](img/add_shellcode.PNG)
 
 `cd /tmp`
 `sudo find ./ -name '*666*'`
 `sudo grep -r '666' ./`
 
-![check_666](/img/local_Check_666.PNG)
+![check_666](img/local_Check_666.PNG)
 
-链接为`https://asciinema.org/a/U67140cMxMqCUJXUyFCIMc4Gr`
+[![asciinema](https://asciinema.org/a/U67140cMxMqCUJXUyFCIMc4Gr.svg)](https://asciinema.org/a/U67140cMxMqCUJXUyFCIMc4Gr)
 
 #### 云平台操作：
 
@@ -113,8 +113,8 @@
 `sudo find ./ -name '*666*'`
 `sudo grep -r '666' ./`
 
-![remote_check_666](/img/remote_check_666.PNG)
-链接为`https://asciinema.org/a/wLuDv7CsHqBOeCkN8181iTWv9`
+![remote_check_666](img/remote_check_666.PNG)
+[![asciinema](https://asciinema.org/a/wLuDv7CsHqBOeCkN8181iTWv9.svg)](https://asciinema.org/a/wLuDv7CsHqBOeCkN8181iTWv9)
 
 ### 【文件压缩与解压缩】练习课件中 文件压缩与解压缩 一节所有提到的压缩与解压缩命令的使用方法
 
@@ -125,40 +125,40 @@
 
 `gzip test.txt`
 `gzip -d test.txt.gz`
-![local_gzip](/img/local_gzip.PNG)
+![local_gzip](img/local_gzip.PNG)
 
-链接为`https://asciinema.org/a/9NscPhjNXRpd36A3LQTqtH67j`
+[![asciinema](https://asciinema.org/a/9NscPhjNXRpd36A3LQTqtH67j.svg)](https://asciinema.org/a/9NscPhjNXRpd36A3LQTqtH67j)
 
 `bzip2`:
 
 `bzip2 -z test.txt`
 `bzip2 -d test.txt.bz2`
-![local_bzip2](/img/Local_bzip2.PNG)
+![local_bzip2](img/Local_bzip2.PNG)
 
-链接为`https://asciinema.org/a/1DQ6S7jZlUbvZBz6253Xx0lLj`
+[![asciinema](https://asciinema.org/a/1DQ6S7jZlUbvZBz6253Xx0lLj.svg)](https://asciinema.org/a/1DQ6S7jZlUbvZBz6253Xx0lLj)
 
 `zip`:
 
 `zip test.txt.zip /tmp`
 `unzip test.txt.zip`
-![local_zip](/img/local_zip.PNG)
+![local_zip](img/local_zip.PNG)
 
-链接为`https://asciinema.org/a/Jji3W9lbesAmSzoQajN5MKqy5`
+[![asciinema](https://asciinema.org/a/Jji3W9lbesAmSzoQajN5MKqy5.svg)](https://asciinema.org/a/Jji3W9lbesAmSzoQajN5MKqy5)
 
 `tar`：
 
 `tar -czvf test-1.tar.gz test.txt`
 `tar -xzvf test-1.tar.gz`
-![local_tar](/img/local_tar.PNG)
-链接为`https://asciinema.org/a/i8PLFyYe4XJ8pfrITJOXLRYru`
+![local_tar](img/local_tar.PNG)
+[![asciinema](https://asciinema.org/a/i8PLFyYe4XJ8pfrITJOXLRYru.svg)](https://asciinema.org/a/i8PLFyYe4XJ8pfrITJOXLRYru)
 
 `7z`:
 
 `7za a test.7z /test.txt`
 `7za x test.7z`
 
-![local_7z](/img/local_7z.PNG)
-链接为`https://asciinema.org/a/A2GweUV0c1xWGDddpGUuxSZF8`
+![local_7z](img/local_7z.PNG)
+[![asciinema](https://asciinema.org/a/A2GweUV0c1xWGDddpGUuxSZF8.svg)](https://asciinema.org/a/A2GweUV0c1xWGDddpGUuxSZF8)
 
 
 `rar`:
@@ -170,9 +170,9 @@
 虚拟机执行
 `unrar x netclass.rar`
 
-![local_rar](/img/local_rar.PNG)
+![local_rar](img/local_rar.PNG)
 
-链接为`https://asciinema.org/a/rSX3CczF3q5GKXHLSCCEO4G2z`
+[![asciinema](https://asciinema.org/a/rSX3CczF3q5GKXHLSCCEO4G2z.svg)](https://asciinema.org/a/rSX3CczF3q5GKXHLSCCEO4G2z)
 
 
 #### 云平台操作：
@@ -185,46 +185,46 @@
 
 查看文件  `cat ./test.txt`
 
-![remote_doc_txt](/img/remote_doc_txt.PNG)
+![remote_doc_txt](img/remote_doc_txt.PNG)
 
 `gzip`:
 `gzip test.txt`
 `gzip -d test.txt.gz`
-![remote_gzip](/img/remote_gzip.PNG)
+![remote_gzip](img/remote_gzip.PNG)
 
-链接为`https://asciinema.org/a/HTItsxrP54CAjCZ6w3MOwKIlP`
+[![asciinema](https://asciinema.org/a/HTItsxrP54CAjCZ6w3MOwKIlP.svg)](https://asciinema.org/a/HTItsxrP54CAjCZ6w3MOwKIlP)
 
 `bzip2`:
 `yum install bzip2`
 `bzip2 -z test.txt`
 `bzip2 -d test.txt.bz2`
-![remote_bzip2](/img/remote_bzip2.PNG)
+![remote_bzip2](img/remote_bzip2.PNG)
 
-链接为`https://asciinema.org/a/d7iwcO7Ih5vRBfU8me7xiiWd4`
+[![asciinema](https://asciinema.org/a/d7iwcO7Ih5vRBfU8me7xiiWd4.svg)](https://asciinema.org/a/d7iwcO7Ih5vRBfU8me7xiiWd4)
 
 `zip`:
 
 `zip test.txt.zip /tmp`
 `yum install unzip`
 `unzip test.txt.zip`
-![remote_zip](/img/remote_zip.PNG)
+![remote_zip](img/remote_zip.PNG)
 
-链接为`https://asciinema.org/a/IDd0dxnJaxoAYIt1Rs23i87rg`
+[![asciinema](https://asciinema.org/a/IDd0dxnJaxoAYIt1Rs23i87rg.svg)](https://asciinema.org/a/IDd0dxnJaxoAYIt1Rs23i87rg)
 
 `tar`：
 
 `tar -czvf test-1.tar.gz test.txt`
 `tar -xzvf test-1.tar.gz`
-![remote_tar(/img/remote_tar.PNG)
-链接为`https://asciinema.org/a/KzMhPfpCkIthmnqQm1bX8iRQx`
+![remote_tar(img/remote_tar.PNG)
+[![asciinema](https://asciinema.org/a/KzMhPfpCkIthmnqQm1bX8iRQx.svg)](https://asciinema.org/a/KzMhPfpCkIthmnqQm1bX8iRQx)
 
 `7z`:
 `yum install -y p7zip`
 `7za a test.7z /test.txt`
 `7za x test.7z`
 
-![remote_7z](/img/remote_7z.PNG)
-链接为`https://asciinema.org/a/CDD2D5X1xwqF6C8a1eWCfCQkq`
+![remote_7z](img/remote_7z.PNG)
+[![asciinema](https://asciinema.org/a/CDD2D5X1xwqF6C8a1eWCfCQkq.svg)](https://asciinema.org/a/CDD2D5X1xwqF6C8a1eWCfCQkq)
 
 `rar`:
 
@@ -232,7 +232,7 @@
 
 通过scp指令将rar文件传输给虚拟机`scp C:/Users/HUAWEI/Desktop/netclass.rar root@139.196.223.58:~/`
 
-![remote_doc_rar](/img/remote_doc_rar.PNG)
+![remote_doc_rar](img/remote_doc_rar.PNG)
 
 安装`rar`：
 
@@ -247,21 +247,21 @@
 云平台执行
 `unrar x netclass.rar`
 
-链接为`https://asciinema.org/a/dYvi61HL6O7U81GXlicmHabqa`
+[![asciinema](https://asciinema.org/a/dYvi61HL6O7U81GXlicmHabqa.svg)](https://asciinema.org/a/dYvi61HL6O7U81GXlicmHabqa)
 
 
 ### 【跟练】 子进程管理实验
 
 #### 本地虚拟机：
 
-![local_exercise](/img/local_exercise.PNG)
-链接为`https://asciinema.org/a/UqkJXBY11vNnw7WVWq0hk8fW6`
+![local_exercise](img/local_exercise.PNG)
+[![asciinema](https://asciinema.org/a/UqkJXBY11vNnw7WVWq0hk8fW6.svg)](https://asciinema.org/a/UqkJXBY11vNnw7WVWq0hk8fW6)
 
 #### 云平台操作：
 
 
-![reomote_exercise](/img/remote_exercise.PNG)
-链接为`https://asciinema.org/a/vyIt55qZ02sFFLCwelRUfCgtN`
+![reomote_exercise](img/remote_exercise.PNG)
+[![asciinema](https://asciinema.org/a/vyIt55qZ02sFFLCwelRUfCgtN.svg)](https://asciinema.org/a/vyIt55qZ02sFFLCwelRUfCgtN)
 
 
 ### 【硬件信息获取】目标系统的 CPU、内存大小、硬盘数量与硬盘容量
@@ -271,18 +271,18 @@
 获取CPU信息 `cat /proc/cpuinfo`
 获取内存信息 `free -h`
 获取硬盘数量以及容量信息`df -h`
-![local_checkinfo](/img/local_checkinfo.PNG)
+![local_checkinfo](img/local_checkinfo.PNG)
 
-链接为`https://asciinema.org/a/bNAzlRs7GR3A2HEh79EOBA4EM`
+[![asciinema](https://asciinema.org/a/bNAzlRs7GR3A2HEh79EOBA4EM.svg)](https://asciinema.org/a/bNAzlRs7GR3A2HEh79EOBA4EM)
 
 #### 云平台：
 获取方式与`Ubuntu`一致
 获取CPU信息 `cat /proc/cpuinfo`
 获取内存信息 `free -h`
 获取硬盘数量以及容量信息`df -h`
-![remote_checkinfo](/img/remote_checkinfo.PNG)
+![remote_checkinfo](img/remote_checkinfo.PNG)
 
-链接为`https://asciinema.org/a/gWnCGZisZGBQfJTiORNeewfrx`
+[![asciinema](https://asciinema.org/a/gWnCGZisZGBQfJTiORNeewfrx.svg)](https://asciinema.org/a/gWnCGZisZGBQfJTiORNeewfrx)
 
 
 实验思考：
@@ -298,12 +298,12 @@
 
 6.此次也出现技术上的问题，就是`CentOS`上的`unrar`的使用。它是需要安装的，但是`yum`上没有相应的资源，不像那个`wireshark`。于是，就得搜寻各种安装方法，`wget http://www.rarlab.com/rar/rarlinux-x64-6.0.2.tar.gz`这个指令我开始尝试，发现到后面不行。然后换那个`rpm`,`pip`也都出现问题。我就想着冷静，看报错的提示，总会有办法的，看了一会发现可能是没有证书的意思。报错也提示了，可以以加上`--no-check-certificate`的形式去访问，然后确实能安装成功。但是发现解压不了，看了一下版本，应该是太低了。我就对比各个帮助网站的信息，成功下载了可用的版本，最后也能成功解压缩了。虽然耽误了不少时间，但也积累了宝贵的经验。
 7.这次我觉得做得还比较好的地方就是对`asciinema`产生的录像软件也进行了相对整洁的命名。方便老师查看，也方便自己订正错误。
-![asciinema_nam](/img/asciinema_nam.PNG)
+![asciinema_nam](img/asciinema_nam.PNG)
 参考链接：
 
-`https://www.cnblogs.com/linjiqin/p/11678012.html`
-`http://c.biancheng.net/linux/gzip.html`
-`https://www.cnblogs.com/cnland/p/3559042.html`
-`https://www.php.cn/linux-474598.html`
-`https://blog.csdn.net/renfufei/article/details/105851728`
-`https://blog.csdn.net/carefree2005/article/details/122131633`
+(linux查找指定内容文件)[https://www.cnblogs.com/linjiqin/p/11678012.html]
+(gzip命令_Linux gzip命令)[http://c.biancheng.net/linux/gzip.html]
+(linux下各种文件格式的压缩以及解压缩命令)[https://www.cnblogs.com/cnland/p/3559042.html]
+(linux查看硬盘信息)[https://www.php.cn/linux-474598.html]
+(Linux系统命令 - 查看内存使用情况)[https://blog.csdn.net/renfufei/article/details/105851728]
+(Linux-tshark抓包工具安装和使用)[https://blog.csdn.net/carefree2005/article/details/122131633]
