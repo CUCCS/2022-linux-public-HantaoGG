@@ -142,6 +142,8 @@ Ubuntu 20.04 Server 64bit 以及阿里云平台提供的linux环境
 
 
 ## 参考资料：
-(ubuntu20添加新网卡后设置自动启用并获取ip)[https://blog.csdn.net/xiongyangg/article/details/110206220]
-(解决virtualbox虚拟机设置nat网络提示无效设置)[https://jingyan.baidu.com/article/a3f121e4850c98fc9052bb97.html]
-(设置ssh免密码登陆linux的配置步骤)[https://www.jianshu.com/p/e9db116fef8c]
+[ubuntu20添加新网卡后设置自动启用并获取ip](https://blog.csdn.net/xiongyangg/article/details/110206220)
+
+[解决virtualbox虚拟机设置nat网络提示无效设置](https://jingyan.baidu.com/article/a3f121e4850c98fc9052bb97.html)
+
+[设置ssh免密码登陆linux的配置步骤](https://www.jianshu.com/p/e9db116fef8c)
