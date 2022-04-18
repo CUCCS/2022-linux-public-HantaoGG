@@ -4,5 +4,5 @@
 
 查看我的`Build`情况
 
-[Build passing](htps://api.travis-ci.com/CUCCS/2022-linux-public-HantaoGG.svg?branch=task04)
+[Build passing](https://api.travis-ci.com/CUCCS/2022-linux-public-HantaoGG.svg?branch=task04)
 
