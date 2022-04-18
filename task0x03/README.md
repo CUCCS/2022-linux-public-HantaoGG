@@ -10,7 +10,7 @@
 
 #### 查看`systemd`的版本
 
-`systemcl --version`
+`systemctl --version`
 
 ![Check_Version](img/Check_Version.png)
 
@@ -117,7 +117,7 @@
 
 [![asciicast](https://asciinema.org/a/f9FEA3hB2vMO8hYncnCPiPghl.svg)](https://asciinema.org/a/f9FEA3hB2vMO8hYncnCPiPghl)
 
-#### `systemctl status`查看系统状态和单个Unit 
+#### `systemctl status`查看系统状态和单个Unit
 
 
 显示系统状态
@@ -412,7 +412,7 @@
 
 `sudo systemctl restart apache2`
 
-![apache_new](img/apache_new.PNG)
+![apache_new](img/apache_new.png)
 
 ### 具体实验内容
 
@@ -432,13 +432,13 @@
 
 `usermod -a -G <group_name> <user_name>`
 
-![User_groups](img/user_Groups.PNG)
+![User_groups](img/user_Groups. png)
 
 #### 如何查看当前系统的分区表和文件系统详细信息？
 
 `df -h`
 
-![df-check](img/df_check.PNG)
+![df-check](img/df_check.png)
 
 `sudo fdisk -l`
 
@@ -496,11 +496,11 @@
 
 在指定分区创建文件系统
 
-![mkfs.ext4_1](img/mkfs.ext4_1.PNG)
+![mkfs.ext4_1](img/mkfs.ext4_1.png)
 
 未挂载前 `df-h`
 
-![df-h_1](img/df_h_1.PNG)
+![df-h_1](img/df_h_1.png)
 
 依次挂载
 
