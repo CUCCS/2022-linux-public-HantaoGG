@@ -7,7 +7,7 @@ before_install:
   - sudo apt-get install ghostscript
   - ls -l
 script:
-  - cd H4/
+  - cd task04/
   - cd code/
   - echo "已进入指定文件夹"
   - bash task02.sh -w
