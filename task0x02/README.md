@@ -299,11 +299,17 @@
 6.此次也出现技术上的问题，就是`CentOS`上的`unrar`的使用。它是需要安装的，但是`yum`上没有相应的资源，不像那个`wireshark`。于是，就得搜寻各种安装方法，`wget http://www.rarlab.com/rar/rarlinux-x64-6.0.2.tar.gz`这个指令我开始尝试，发现到后面不行。然后换那个`rpm`,`pip`也都出现问题。我就想着冷静，看报错的提示，总会有办法的，看了一会发现可能是没有证书的意思。报错也提示了，可以以加上`--no-check-certificate`的形式去访问，然后确实能安装成功。但是发现解压不了，看了一下版本，应该是太低了。我就对比各个帮助网站的信息，成功下载了可用的版本，最后也能成功解压缩了。虽然耽误了不少时间，但也积累了宝贵的经验。
 7.这次我觉得做得还比较好的地方就是对`asciinema`产生的录像软件也进行了相对整洁的命名。方便老师查看，也方便自己订正错误。
 ![asciinema_nam](img/asciinema_nam.PNG)
+
 参考链接：
 
-(linux查找指定内容文件)[https://www.cnblogs.com/linjiqin/p/11678012.html]
-(gzip命令_Linux gzip命令)[http://c.biancheng.net/linux/gzip.html]
-(linux下各种文件格式的压缩以及解压缩命令)[https://www.cnblogs.com/cnland/p/3559042.html]
-(linux查看硬盘信息)[https://www.php.cn/linux-474598.html]
-(Linux系统命令 - 查看内存使用情况)[https://blog.csdn.net/renfufei/article/details/105851728]
-(Linux-tshark抓包工具安装和使用)[https://blog.csdn.net/carefree2005/article/details/122131633]
+[linux查找指定内容文件](https://www.cnblogs.com/linjiqin/p/11678012.html)
+
+[gzip命令_Linux gzip命令](http://c.biancheng.net/linux/gzip.html)
+
+[linux下各种文件格式的压缩以及解压缩命令](https://www.cnblogs.com/cnland/p/3559042.html)
+
+[linux查看硬盘信息](https://www.php.cn/linux-474598.html)
+
+[Linux系统命令 - 查看内存使用情况](https://blog.csdn.net/renfufei/article/details/105851728)
+
+[Linux-tshark抓包工具安装和使用](https://blog.csdn.net/carefree2005/article/details/122131633)
