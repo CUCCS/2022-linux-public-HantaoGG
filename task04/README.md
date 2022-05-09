@@ -6,6 +6,12 @@
 
 `Vscode`
 
+## Travis C 结果
+
+![Build](https://api.travis-ci.com/CUCCS/2022-linux-public-HantaoGG.svg?branch=task04)
+
+[传送](https://github.com/CUCCS/2022-linux-public-HantaoGG/pull/4/checks?check_run_id=6062671101)
+
 ### 实验任务
 
 #### 用bash编写一个图片批处理脚本，实现以下功能
