@@ -14,6 +14,7 @@ script:
   - bash task02.sh -w
   - bash task03.sh -w
   - ls -l
+  - cd task01/
   - echo Task01
   - bash task01.sh -h
   - bash task01.sh -R 50
@@ -23,6 +24,7 @@ script:
   - bash task01.sh -add_2 a
   - bash task01.sh -c
   - echo "=============================="
+  - cd..
   - echo Task02
   - bash task02.sh -h
   - bash task02.sh -s 
