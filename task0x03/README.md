@@ -55,9 +55,10 @@
 `localectl`
 
 设置本地化参数
-
-`sudo localectl set-locale LANG=en_GB.utf8`
-`sudo localectl set-keymap en_GB`
+```
+sudo localectl set-locale LANG=en_GB.utf8
+sudo localectl set-keymap en_GB
+```
 
 [![asciinema](https://asciinema.org/a/LNAl059zTGuRTT1gMgQ25DcRp.svg)](https://asciinema.org/a/LNAl059zTGuRTT1gMgQ25DcRp)
 
@@ -72,11 +73,11 @@
 `timedatectl list-timezones`
 
 设置当前时区
-
-`sudo timedatectl set-timezone America/New_York`
-`sudo timedatectl set-time YYYY-MM-DD`
-`sudo timedatectl set-time HH:MM:SS`
-
+```
+sudo timedatectl set-timezone America/New_York
+sudo timedatectl set-time YYYY-MM-DD
+sudo timedatectl set-time HH:MM:SS
+```
 [![asciicast](https://asciinema.org/a/whABRrUiWLQdTYy6whwWrzmwP.svg)](https://asciinema.org/a/whABRrUiWLQdTYy6whwWrzmwP)
 
 #### `loginctl` 查看当前登录的用户
@@ -274,27 +275,26 @@
 `sudo journalctl -k`
 
 查看系统本次启动的日志
-
-
-`sudo journalctl -b`
-`sudo journalctl -b -0`
-
+```
+sudo journalctl -b
+sudo journalctl -b -0
+```
 查看上一次启动的日志（需更改设置）
 
 `sudo journalctl -b -1`
 
 查看指定时间的日志
+```
+sudo journalctl --since="2022-4-4 18:17:16"
 
-`sudo journalctl --since="2022-4-4 18:17:16"`
+sudo journalctl --since "20 min ago"
 
-`sudo journalctl --since "20 min ago"`
+sudo journalctl --since yesterday
 
-`sudo journalctl --since yesterday`
+sudo journalctl --since "2022-04-03" --until "2022-04-04 22:00"
 
-`sudo journalctl --since "2022-04-03" --until "2022-04-04 22:00"`
-
-`sudo journalctl --since 09:00 --until "1 hour ago"`
-
+sudo journalctl --since 09:00 --until "1 hour ago"
+```
 显示尾部的最新10行日志
 
 `sudo journalctl -n`
@@ -324,11 +324,10 @@
 `sudo journalctl _UID=33 --since today`
 
 查看某个 `Unit` 的日志
-
-`sudo journalctl -u nginx.service`
-
-`sudo journalctl -u nginx.service --since today`
-
+```
+sudo journalctl -u nginx.service
+sudo journalctl -u nginx.service --since today
+```
 实时滚动显示某个 `Unit` 的最新日志
 
 `sudo journalctl -u nginx.service -f`
@@ -369,19 +368,19 @@
 ### [`systemd`入门教程：实战篇](http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html)
 
 #### 开机启动、启动服务以及停止服务
+```
+sudo systemctl enable apache2
 
-`sudo systemctl enable apache2`
+sudo systemctl start apache2
 
-`sudo systemctl start apache2`
+sudo systemctl status apache2
 
-`sudo systemctl status apache2`
+sudo systemctl stop apache2.service
 
-`sudo systemctl stop apache2.service`
+sudo systemctl kill apache2.service
 
-`sudo systemctl kill apache2.service`
-
-`sudo systemctl restart apache2.service`
-
+sudo systemctl restart apache2.service
+```
 [![asciicast](https://asciinema.org/a/OsjrCo7Spn0PjaGibdBjCV3vR.svg)](https://asciinema.org/a/OsjrCo7Spn0PjaGibdBjCV3vR)
 
 #### 查看配置文件
@@ -417,11 +416,11 @@
 ### 具体实验内容
 
 #### 如何添加一个用户并使其具备`sudo`执行程序的权限？
+```
+sudo adduser taozi
 
-`sudo adduser taozi`
-
-`sudo usermod -G sudo taozi`
-
+sudo usermod -G sudo taozi
+```
 [![asciicast](https://asciinema.org/a/a5kIJceODTFeTdBZdZh1Xa1q6.svg)](https://asciinema.org/a/a5kIJceODTFeTdBZdZh1Xa1q6)
 
 `groups taozi`
@@ -432,7 +431,7 @@
 
 `usermod -a -G <group_name> <user_name>`
 
-![User_groups](img/user_Groups. png)
+![User_groups](img/user_Groups.png)
 
 #### 如何查看当前系统的分区表和文件系统详细信息？
 
@@ -454,13 +453,13 @@
 新建共享文件夹的配置情况
 
 ![Share_disposition](img/Share_disposition.png)
+```
+sudo mkdir /mnt/share
 
-`sudo mkdir /mnt/share`
+sudo mount -t vboxsf VirtualBox_share /mnt/share/
 
-`sudo mount -t vboxsf VirtualBox_share /mnt/share/`
-
-`cd /mnt/share`
-
+cd /mnt/share
+```
 ![cat_info](img/cat_info.png)
 
 `sudo vim /etc/fstab`
