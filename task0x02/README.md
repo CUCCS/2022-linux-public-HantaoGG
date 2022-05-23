@@ -24,9 +24,11 @@
 
 #### 在本地虚拟机安装 `asciinema` ：
 ```
+
 sudo apt-get update
 sudo apt-get install asciinema
 asciinema auth
+
 ```
 ![asciinema_download](img/asciinema_download.png)
 
